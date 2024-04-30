@@ -1,0 +1,97 @@
+{
+    "const ['name']:React.FC": {
+        "prefix": "rxf",
+        "body": [
+          "import React from 'react'",
+          "",
+          "export const $1 = (): React.FC => {",
+          "  return ${2:'your code goes here'}",
+          "}",
+        ],
+        "description": "create a react functional component"
+      },
+      "const ['name']:React.FC (exp as default)": {
+        "prefix": "rxfd",
+        "body": [
+          "import React from 'react'",
+          "",
+          "const $1 = (): React.FC => {",
+          "  return ${2:'your code goes here'}",
+          "}",
+          "",
+          "export default $1"
+        ],
+        "description": "create a react functional component and exports as default."
+      },
+      "class ['name'] @Component": {
+        "prefix": "rxc",
+        "body": [
+          "import React, { Component } from 'react'",
+          "",
+          "export class $1 extends Component {",
+          "  render () {",
+          "    return ${2:'your code goes here'}",
+          "  }",
+          "}",
+        ],
+        "description": "create a react class component"
+      },
+      "class ['name'] @Component (exp as default)": {
+        "prefix": "rxcd",
+        "body": [
+          "import React, { Component } from 'react'",
+          "",
+          "export default class $1 extends Component {",
+          "  render () {",
+          "    return ${2:'your code goes here'}",
+          "  }",
+          "}",
+        ],
+        "description": "create a react class component"
+      },
+      "const ['name']: React.FC {useState}": {
+        "prefix": "rush",
+        "body": [
+          "import React, { useState } from 'react'",
+          "",
+          "const $1 = (): React.FC => {",
+          "  const [state, setState] = useState(0)",
+          "",
+          "  return ${2:'your code goes here'}",
+          "}",
+          "",
+          "export default $1"
+        ],
+        "description": "create a react component with useState hook"
+      },
+      "const ['name']: React.FC {useEffect}": {
+        "prefix": "rueh",
+        "body": [
+          "import React, { useEffect } from 'react'",
+          "",
+          "const $1 = () => {",
+          "  useEffect(() => {",
+          "    ${2:'your code goes here'}",
+          "  }, []);",
+          "",
+          "  return ${3:'your code goes here'}",
+          "}",
+          "",
+          "export default $1"
+        ],
+        "description": "create a react component with useEffect hook"
+      },
+      "const ['name']: React.FC {condition}": {
+        "prefix": "rcr",
+        "body": [
+          "import React from 'react';",
+          "",
+          "const $1 = (${2: condition }): React.FC => {",
+          "  return ${2:condition} ? ${3:'your code goes here'} : ${4:'your code goes here'}",
+          "}",
+          "",
+          "export default $1"
+        ],
+        "description": "create a react component with conditional rendering"
+      }      
+}
