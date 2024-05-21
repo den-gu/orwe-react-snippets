@@ -1,7 +1,5 @@
 # ORWE React Snippets for VSCode
 
-![Logo](path-to-your-logo.png)
-
 ## Descrição
 
 ORWE React Snippets é uma coleção de snippets úteis para desenvolvimento em React, projetada para acelerar o seu fluxo de trabalho e aumentar a produtividade. Com esta extensão, você pode facilmente inserir códigos comuns do React com apenas alguns toques no teclado.
@@ -26,16 +24,18 @@ Após instalar a extensão, você pode usar os snippets digitando os prefixos do
 ### Exemplos de Snippets
 
 - **rxf**: cria um componente funcional.
+
   ```typescript
   // rxf
   import React from 'react'
-  
+
   export const $1 = (): React.FC => {
     return ${2:'your code goes here'}
   }
   ```
 
 - **rush**: cria um componente funcional com useState.
+
   ```typescript
   // rush
   import React, { useState } from 'react'
@@ -44,46 +44,49 @@ Após instalar a extensão, você pode usar os snippets digitando os prefixos do
 
     const [state, setState] = useState(0)
     return ${2:'your code goes here'}
-  
+
   }
   export default $1
   ```
 
 - **rueh**: cria um componente funcional com useEffect.
+
   ```typescript
   // rueh
   import React, { useEffect } from 'react'
-  
+
   const $1 = () => {
     useEffect(() => {
       ${2:'your code goes here'}
     }, [])
     return ${3:'your code goes here'}
   }
-  
+
   export default $1
   ```
 
 - **rcr**: cria um componente funcional com renderização condicional.
+
   ```typescript
   // rcr
   import React from 'react'
-  
+
   const $1 = (${2: condition }): React.FC => {
     return ${2:condition} ? ${3:'your code goes here'} : ${4:'your code goes here'}
   }
-  
+
   export default $1
   ```
 
 ### Todos os Snippets
+
 `rxf` - react export function: cria um componente funcional  
 `rxfd` - react export function default: cria um componente funcional e o exporta como default  
 `rxc` - react export class: cria um componente de classe  
 `rxcd` - react export class default: cria um componente de classe e o exporta como default  
 `rush` - react useState hook: cria um componente funcional com useState  
 `rueh` - react useEffect hook: cria um componente funcional com useEffect  
-`rcr` - react conditional rendering: cria um componente funcional com renderização condicional  
+`rcr` - react conditional rendering: cria um componente funcional com renderização condicional
 
 ## Contribuição
 
