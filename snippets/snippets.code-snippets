@@ -8,7 +8,7 @@
           "  return ${2:'your code goes here'}",
           "}",
         ],
-        "description": "create a react functional component"
+        "description": "creates a react functional component"
       },
       "const ['name']:React.FC (exp as default)": {
         "prefix": "rxfd",
@@ -21,7 +21,7 @@
           "",
           "export default $1"
         ],
-        "description": "create a react functional component and exports as default."
+        "description": "creates a react functional component and exports it as default"
       },
       "class ['name'] @Component": {
         "prefix": "rxc",
@@ -34,7 +34,7 @@
           "  }",
           "}",
         ],
-        "description": "create a react class component"
+        "description": "creates a react class component"
       },
       "class ['name'] @Component (exp as default)": {
         "prefix": "rxcd",
@@ -47,7 +47,7 @@
           "  }",
           "}",
         ],
-        "description": "create a react class component"
+        "description": "creates a react class component and exports it as default"
       },
       "const ['name']: React.FC {useState}": {
         "prefix": "rush",
@@ -62,7 +62,7 @@
           "",
           "export default $1"
         ],
-        "description": "create a react component with useState hook"
+        "description": "creates a react component with the useState hook"
       },
       "const ['name']: React.FC {useEffect}": {
         "prefix": "rueh",
@@ -79,12 +79,12 @@
           "",
           "export default $1"
         ],
-        "description": "create a react component with useEffect hook"
+        "description": "creates a react component with the useEffect hook"
       },
       "const ['name']: React.FC {condition}": {
         "prefix": "rcr",
         "body": [
-          "import React from 'react';",
+          "import React from 'react'",
           "",
           "const $1 = (${2: condition }): React.FC => {",
           "  return ${2:condition} ? ${3:'your code goes here'} : ${4:'your code goes here'}",
@@ -92,6 +92,6 @@
           "",
           "export default $1"
         ],
-        "description": "create a react component with conditional rendering"
+        "description": "creates a react component with conditional rendering"
       }      
 }
