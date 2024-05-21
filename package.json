@@ -2,7 +2,7 @@
   "name": "orwe-react-snippets",
   "displayName": "ORWE React Snippets",
   "description": "Uma coleção de snippets úteis para desenvolvimento em React.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "ORWE",
   "engines": {
     "vscode": "^1.88.0"
