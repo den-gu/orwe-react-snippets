@@ -1,9 +1,15 @@
 # Change Log
 
-All notable changes to the "onrwe-react-snippets" extension will be documented in this file.
+## [0.0.1] - 2024-05-21
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+### Added
 
-## [Unreleased]
+- Lançamento inicial da extensão ORWE React Snippets.
+- Adicionado snippet para componentes funcionais (`rxf` e `rxfd`).
+- Adicionado snippet para componentes de classe (`rxc` e `rxcd`).
+- Adicionado snippet para `useState` hook (`rush`).
+- Adicionado snippet para `useEffect` hook (`rueh`).
+- Adicionado snippet para renderização condicional (`rcr`).
+- Adicionado suporte para arquivos `.ts`, e `.tsx`.
 
-- Initial release
+---
