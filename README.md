@@ -77,13 +77,13 @@ Após instalar a extensão, você pode usar os snippets digitando os prefixos do
   ```
 
 ### Todos os Snippets
-`rxf` - react export function: cria um componente funcional
-`rxfd` - react export function default: cria um componente funcional e o exporta como default
-`rxc` - react export class: cria um componente de classe
-`rxcd` - react export class default: cria um componente de classe e o exporta como default
-`rush` - react useState hook: cria um componente funcional com useState
-`rueh` - react useEffect hook: cria um componente funcional com useEffect
-`rcr` - react conditional rendering: cria um componente funcional com renderização condicional
+`rxf` - react export function: cria um componente funcional  
+`rxfd` - react export function default: cria um componente funcional e o exporta como default  
+`rxc` - react export class: cria um componente de classe  
+`rxcd` - react export class default: cria um componente de classe e o exporta como default  
+`rush` - react useState hook: cria um componente funcional com useState  
+`rueh` - react useEffect hook: cria um componente funcional com useEffect  
+`rcr` - react conditional rendering: cria um componente funcional com renderização condicional  
 
 ## Contribuição
 
