@@ -1,65 +1,75 @@
-# onrwe-react-snippets README
+# ORWE React Snippets for VSCode
 
-This is the README for your extension "onrwe-react-snippets". After writing up a brief description, we recommend including the following sections.
+![Logo](path-to-your-logo.png)
 
-## Features
+## Descrição
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+ORWE React Snippets é uma coleção de snippets úteis para desenvolvimento em React, projetada para acelerar o seu fluxo de trabalho e aumentar a produtividade. Com esta extensão, você pode facilmente inserir códigos comuns do React com apenas alguns toques no teclado.
 
-For example if there is an image subfolder under your extension project workspace:
+## Funcionalidades
 
-\!\[feature X\]\(images/feature-x.png\)
+- **Componentes Funcionais**: Snippets para criação rápida de componentes funcionais.
+- **Hooks**: Snippets para os hooks mais comuns, como `useState`, `useEffect`, `useContext` e mais.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Instalação
 
-## Requirements
+1. Abra o VSCode.
+2. Vá para a aba de Extensões (`Ctrl+Shift+X` ou `Cmd+Shift+X` no Mac).
+3. Procure por "ORWE React Snippets".
+4. Clique em "Instalar".
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+## Uso
 
-## Extension Settings
+Após instalar a extensão, você pode usar os snippets digitando os prefixos dos snippets em seus arquivos `.ts`, ou `.tsx`.
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+### Exemplos de Snippets
 
-For example:
+- **rfc**: Cria um componente funcional básico.
+  ```typescript
+  // rfc
+  import React from 'react';
 
-This extension contributes the following settings:
+  const ComponentName = () => {
+    return (
+      <div>
+        {/* Content here */}
+      </div>
+    );
+  };
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+  export default ComponentName;
+  ```
 
-## Known Issues
+- **useState**: Cria um hook useState.
+  ```typescript
+  // useState
+  const [state, setState] = useState(0);
+  ```
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+- **useEffect**: Cria um hook useEffect.
+  ```typescript
+  // useEffect
+  useEffect(() => {
+    // effect
+    return () => {
+      // cleanup
+    };
+  }, [dependencies]);
+  ```
 
-## Release Notes
+## Contribuição
 
-Users appreciate release notes as you update your extension.
+Contribuições são bem-vindas! Se encontrares um bug ou tiveres sugestões de novos snippets, por favor, abra uma issue ou envie um pull request no [repositório do GitHub](https://github.com/den-gu/orwe-react-snippets).
 
-### 1.0.0
+### Como Contribuir
 
-Initial release of ...
+1. Fork este repositório.
+2. Crie uma nova branch: `git checkout -b minha-feature`.
+3. Faça as suas modificações.
+4. Faça o commit: `git commit -m 'Adiciona minha feature'`.
+5. Push para a branch: `git push origin minha-feature`.
+6. Abra um pull request.
 
-### 1.0.1
+## Licença
 
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
