@@ -100,3 +100,9 @@ Contribuições são bem-vindas! Se encontrares um bug ou tiveres sugestões de 
 4. Faça o commit: `git commit -m 'Adiciona minha feature'`.
 5. Push para a branch: `git push origin minha-feature`.
 6. Abra um pull request.
+
+## Licença
+
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
