@@ -27,55 +27,53 @@ Após instalar a extensão, você pode usar os snippets digitando os prefixos do
 
   ```typescript
   // rxf
-  import React from 'react'
+  import React from "react";
 
-  export const $1 = (): React.FC => {
-    return ${2:'your code goes here'}
-  }
+  export const Component: React.FC = () => {
+    return "your code goes here";
+  };
   ```
 
 - **rush**: cria um componente funcional com useState.
 
   ```typescript
   // rush
-  import React, { useState } from 'react'
+  import React, { useState } from "react";
 
-  const $1 = (): React.FC => {
-
-    const [state, setState] = useState(0)
-    return ${2:'your code goes here'}
-
-  }
-  export default $1
+  const Component: React.FC = () => {
+    const [state, setState] = useState(0);
+    return "your code goes here";
+  };
+  export default Component;
   ```
 
 - **rueh**: cria um componente funcional com useEffect.
 
   ```typescript
   // rueh
-  import React, { useEffect } from 'react'
+  import React, { useEffect } from "react";
 
-  const $1 = () => {
+  const Component: React.FC = () => {
     useEffect(() => {
-      ${2:'your code goes here'}
-    }, [])
-    return ${3:'your code goes here'}
-  }
+      "your code goes here";
+    }, []);
+    return "your code goes here";
+  };
 
-  export default $1
+  export default Component;
   ```
 
 - **rcr**: cria um componente funcional com renderização condicional.
 
   ```typescript
   // rcr
-  import React from 'react'
+  import React from "react";
 
-  const $1 = (${2: condition }): React.FC => {
-    return ${2:condition} ? ${3:'your code goes here'} : ${4:'your code goes here'}
-  }
+  const Component: React.FC = (condition) => {
+    return condition ? "your code goes here" : "your code goes here";
+  };
 
-  export default $1
+  export default Component;
   ```
 
 ### Todos os Snippets

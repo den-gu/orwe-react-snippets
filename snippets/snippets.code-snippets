@@ -1,97 +1,97 @@
 {
-    "const ['name']:React.FC": {
-        "prefix": "rxf",
-        "body": [
-          "import React from 'react'",
-          "",
-          "export const $1 = (): React.FC => {",
-          "  return ${2:'your code goes here'}",
-          "}",
-        ],
-        "description": "creates a react functional component"
-      },
-      "const ['name']:React.FC (exp as default)": {
-        "prefix": "rxfd",
-        "body": [
-          "import React from 'react'",
-          "",
-          "const $1 = (): React.FC => {",
-          "  return ${2:'your code goes here'}",
-          "}",
-          "",
-          "export default $1"
-        ],
-        "description": "creates a react functional component and exports it as default"
-      },
-      "class ['name'] @Component": {
-        "prefix": "rxc",
-        "body": [
-          "import React, { Component } from 'react'",
-          "",
-          "export class $1 extends Component {",
-          "  render () {",
-          "    return ${2:'your code goes here'}",
-          "  }",
-          "}",
-        ],
-        "description": "creates a react class component"
-      },
-      "class ['name'] @Component (exp as default)": {
-        "prefix": "rxcd",
-        "body": [
-          "import React, { Component } from 'react'",
-          "",
-          "export default class $1 extends Component {",
-          "  render () {",
-          "    return ${2:'your code goes here'}",
-          "  }",
-          "}",
-        ],
-        "description": "creates a react class component and exports it as default"
-      },
-      "const ['name']: React.FC {useState}": {
-        "prefix": "rush",
-        "body": [
-          "import React, { useState } from 'react'",
-          "",
-          "const $1 = (): React.FC => {",
-          "  const [state, setState] = useState(0)",
-          "",
-          "  return ${2:'your code goes here'}",
-          "}",
-          "",
-          "export default $1"
-        ],
-        "description": "creates a react component with the useState hook"
-      },
-      "const ['name']: React.FC {useEffect}": {
-        "prefix": "rueh",
-        "body": [
-          "import React, { useEffect } from 'react'",
-          "",
-          "const $1 = () => {",
-          "  useEffect(() => {",
-          "    ${2:'your code goes here'}",
-          "  }, []);",
-          "",
-          "  return ${3:'your code goes here'}",
-          "}",
-          "",
-          "export default $1"
-        ],
-        "description": "creates a react component with the useEffect hook"
-      },
-      "const ['name']: React.FC {condition}": {
-        "prefix": "rcr",
-        "body": [
-          "import React from 'react'",
-          "",
-          "const $1 = (${2: condition }): React.FC => {",
-          "  return ${2:condition} ? ${3:'your code goes here'} : ${4:'your code goes here'}",
-          "}",
-          "",
-          "export default $1"
-        ],
-        "description": "creates a react component with conditional rendering"
-      }      
+  "reactFunctionalComponent": {
+    "prefix": "rxf",
+    "body": [
+      "import React from 'react'",
+      "",
+      "export const $1: React.FC = () => {",
+      "  return ${2:'your code goes here'}",
+      "}"
+    ],
+    "description": "creates a react functional component"
+  },
+  "reactDefaultFunctionalComponent": {
+    "prefix": "rxfd",
+    "body": [
+      "import React from 'react'",
+      "",
+      "const $1: React.FC = () => {",
+      "  return ${2:'your code goes here'}",
+      "}",
+      "",
+      "export default $1"
+    ],
+    "description": "creates a react functional component and exports it as default"
+  },
+  "reactClassComponent": {
+    "prefix": "rxc",
+    "body": [
+      "import React, { Component } from 'react'",
+      "",
+      "export class $1 extends Component {",
+      "  render () {",
+      "    return ${2:'your code goes here'}",
+      "  }",
+      "}"
+    ],
+    "description": "creates a react class component"
+  },
+  "reactDefaultClassComponent": {
+    "prefix": "rxcd",
+    "body": [
+      "import React, { Component } from 'react'",
+      "",
+      "export default class $1 extends Component {",
+      "  render () {",
+      "    return ${2:'your code goes here'}",
+      "  }",
+      "}"
+    ],
+    "description": "creates a react class component and exports it as default"
+  },
+  "react useState hook": {
+    "prefix": "rush",
+    "body": [
+      "import React, { useState } from 'react'",
+      "",
+      "const $1: React.FC = () => {",
+      "  const [state, setState] = useState(0)",
+      "",
+      "  return ${2:'your code goes here'}",
+      "}",
+      "",
+      "export default $1"
+    ],
+    "description": "creates a react component with the useState hook"
+  },
+  "react useEffect hook": {
+    "prefix": "rueh",
+    "body": [
+      "import React, { useEffect } from 'react'",
+      "",
+      "const $1: React.FC = () => {",
+      "  useEffect(() => {",
+      "    ${2:'your code goes here'}",
+      "  }, []);",
+      "",
+      "  return ${3:'your code goes here'}",
+      "}",
+      "",
+      "export default $1"
+    ],
+    "description": "creates a react component with the useEffect hook"
+  },
+  "reactConditionalRendering": {
+    "prefix": "rcr",
+    "body": [
+      "import React from 'react'",
+      "",
+      "const $1: React.FC = (${2: condition }) => {",
+      "  return ${2:condition} ? ${3:'your code goes here'} : ${4:'your code goes here'}",
+      "}",
+      "",
+      "export default $1"
+    ],
+    "description": "creates a react component with conditional rendering"
+  }
 }

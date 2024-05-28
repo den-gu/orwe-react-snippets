@@ -12,4 +12,14 @@
 - Adicionado snippet para renderização condicional (`rcr`).
 - Adicionado suporte para arquivos `.ts`, e `.tsx`.
 
+## [0.1.3] - 2024-05-28
+
+### Changed
+
+- Alterada a chave dos snippets para melhor identificar o que o snippet faz.
+
+### Fixed
+
+- Corrigido o bug que adicionava React.FC como o tipo de retorno dos componentes.
+
 ---
